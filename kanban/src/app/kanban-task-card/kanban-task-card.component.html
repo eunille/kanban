@@ -1,0 +1,29 @@
+<div class="task-card" [ngClass]="{'backlog': isBacklog, 'urgent': isUrgent}" cdkDrag>
+    <h2 class="expand" (click)="toggleDetails()" (click)="toggleMaximize()">{{ task?.taskName }}</h2>
+
+    <div class="hide-first" *ngIf="isMaximized">
+        <hr>
+        <p class="justify">{{ task?.description }}</p>
+        <hr>
+        <p><b>Start Date:</b> {{ task?.createdDate | date: 'MMMM d, y' }}</p>
+        <p><b>Duration:</b> {{ duration }}</p>
+        <p><b>Assignee:</b> {{ task?.assignee }}</p>
+
+    </div>
+
+    <div class="time">
+        <p><b>{{ timeRemaining }}</b></p>
+    </div>
+
+    <div class="button-edit">
+        <button (click)="editTask()"><i class="fa-solid fa-pen"></i></button>
+    </div>
+    <div class="button-delete">
+        <button (click)="deleteTask()"><i class="fa-solid fa-trash"></i></button>
+    </div>
+
+    <div [ngClass]="{'done':isDone, 'hold':isHold, 'backlog-circle':isBacklogCircle}"></div>
+    <div [ngClass]="{'done-duedate': isDone, 'duedate': !isDone}">
+        <p><b>Due: {{ task?.dueDate | date: 'MMMM d, y' }}</b></p>
+    </div>
+</div>

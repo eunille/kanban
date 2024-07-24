@@ -1,0 +1,136 @@
+.board-form {
+    width: 400px;
+    margin-right: 5px;
+}
+
+.board-form-inner1,
+.board-form-inner2 {
+    height: 100%;
+    background-color: #042145;
+}
+
+
+.modal-body,
+.modal-content,
+.board-form-inner2 {
+    width: fit-content;
+}
+
+.modal-header {
+    cursor: move;
+}
+
+.modal-dialog {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.board-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.kanban-board {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    position: relative;
+}
+
+.example-list {
+    width: 500px;
+    border: 1px solid #042145;
+    border-radius: 5px;
+    margin: 0 5px 0 5px;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.hang-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    background-color: #042145;
+    border: 1px solid #bedbff;
+    color: #bedbff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hang-button:hover {
+    background-color: #bedbff;
+    color: #042145;
+    transform: scale(1.1);
+}
+
+.hang-button1 {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    background-color: #042145;
+    border: 1px solid #bedbff;
+    color: #bedbff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hang-button1:hover {
+    background-color: #bedbff;
+    color: #042145;
+    transform: scale(1.1);
+}
+
+.column-lenght {
+    position: absolute;
+    background-color: #042145;
+    top: -10px;
+    left: -10px;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+    }
+}
+
+.h2-container {
+    position: relative;
+}
+
+/* 
+i {
+    padding-right: 5px;
+} */
