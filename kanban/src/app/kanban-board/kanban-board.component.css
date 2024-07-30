@@ -85,6 +85,23 @@
     transform: scale(1.1);
 }
 
+.hang-button-plus {
+    background-color: #042145;
+    border: 1px solid #bedbff;
+    color: #bedbff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hang-button-plus:hover {
+    background-color: #bedbff;
+    color: #042145;
+    transform: scale(1.1);
+}
+
 .hang-button1 {
     position: fixed;
     top: 10px;
@@ -128,6 +145,18 @@
 
 .h2-container {
     position: relative;
+    display: flex;
+    align-items: center;
+
+    h2 {
+        padding: 0;
+        margin: 0;
+        flex-grow: 1;
+    }
+
+    button {
+        flex-basis: 50px;
+    }
 }
 
 /* 

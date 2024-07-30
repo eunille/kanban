@@ -55,6 +55,19 @@ export class KanbanBoardComponent implements OnInit {
     this.tasks.forEach(task => task.isMaximized = false);
   }
 
+  // Methods to handle the create task modal
+  openCreateTaskModal() {
+    $('#createTaskModal').modal('show');
+  }
+
+  closeCreateTaskModal() {
+    $('#createTaskModal').modal('hide');
+  }
+
+  closeCreateForm() {
+    $('#createTaskModal').modal('hide');
+  }
+
   ngOnInit(): void {
     console.log('Initializing KanbanBoardComponent'); // Debugging log
     console.log('Calling loadTasks'); // Debugging log
@@ -88,6 +101,7 @@ export class KanbanBoardComponent implements OnInit {
       task.user_id = userId;
       this.taskService.createTask(task).subscribe(() => {
         this.loadTasks();
+        this.closeCreateTaskModal(); // Close the modal after task creation
       });
     } else {
       console.error('User ID is not set');
