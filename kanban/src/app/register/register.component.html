@@ -1,18 +1,4 @@
-<div class="position-relative">
-    <div class="area">
-        <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
+<div class="body">
 
     <div class="form-container">
 
@@ -20,8 +6,7 @@
 
             <form class="sticky" [formGroup]="registerForm" (ngSubmit)="register()">
                 <div class="header">
-                    <h2 class="white">Register</h2>
-                    <hr class="white">
+                    <h1 class="txt">Sign Up</h1>
                 </div>
                 <div>
                     <label for="email">Email</label>
@@ -31,9 +16,10 @@
                     <label for="password">Password</label>
                     <input id="password" formControlName="password" type="password">
                 </div>
+                <button type="submit">Continue</button>
                 <hr>
-                <button type="submit">Register</button>
-                <button class="submit1" (click)="goToLogin()">Sign in?</button>
+                <p class="span">Already have an account?</p>
+                <button class="submit1" (click)="goToLogin()">Log In</button>
             </form>
         </div>
     </div>
