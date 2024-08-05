@@ -1,17 +1,18 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Task } from '../models/task.model';
 
 @Component({
   selector: 'app-kanban-create-task-form',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule], // Include necessary modules here
   templateUrl: './kanban-create-task-form.component.html',
   styleUrls: ['./kanban-create-task-form.component.css']
 })
 export class KanbanCreateTaskFormComponent implements OnInit {
   @Output() taskCreated = new EventEmitter<Task>();
+  @Output() closeCreateFormEvent = new EventEmitter<void>(); // New output event
 
   taskForm!: FormGroup;
 
@@ -31,6 +32,10 @@ export class KanbanCreateTaskFormComponent implements OnInit {
   saveTask() {
     const taskData = this.taskForm.value;
     this.taskCreated.emit(taskData);
+  }
+
+  closeForm() {
+    this.closeCreateFormEvent.emit();
   }
 
   resetForm() {
