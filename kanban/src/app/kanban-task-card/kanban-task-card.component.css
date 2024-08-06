@@ -1,158 +1,74 @@
 /* Add some basic styling to the task card */
 .task-card {
-    background-color: #fff;
-    border-radius: 5px;
+    background-color: #5C5470;
+    border-radius: 15px;
     padding: 20px;
-    width: 100%;
+    width: 360px;
+    height: auto;
     cursor: move;
-    margin-top: 20px;
-    border: 1px solid #042145;
+    border: none;
+    margin-bottom: 5px;
 }
 
 .task-card h2.expand {
     font-weight: bold;
     cursor: pointer;
+    font-size: 25px;
+    left: -1px;
+    position: relative;
+    margin-bottom: 10px;
 }
 
 .urgent {
-    border: 5px solid #ff7300;
-    background-color: #fff;
-
-    h2 {
-        color: rgb(42, 42, 42);
-    }
-
-    p.urgent-p {
-        color: rgb(42, 42, 42);
-    }
-
-    p {
-        color: rgb(42, 42, 42);
-    }
-
-    hr {
-        background-color: rgb(42, 42, 42);
-    }
-
+    border: 1px solid orange;
+    background-color: #5C5470;
 }
 
-.done {
-
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #82aa38;
-    border: 5px solid #fff;
-    top: -10px;
-    left: -10px;
-
-}
-
-.hold {
-
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #90720e;
-    border-color: #fff;
-    top: -10px;
-    right: -10px;
-
-}
 
 .hide {
     display: none;
 }
 
-.backlog-circle {
-
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #000000;
-    border-color: #fff;
-    top: -10px;
-    right: -10px;
-
-}
 
 .duedate {
     position: absolute;
-    width: fit-content;
-    height: 30px;
-    background-color: #ffffff;
-    border: 1px solid #4dc900;
-    top: -10px;
-    left: -10px;
+    text-align: center;
     display: flex;
     justify-content: center;
-    border-radius: 5px;
-    padding: 0 10px 0 10px;
-
-    p {
-        padding: 0;
-        margin: 0;
-        padding-top: 4px;
-        color: #000000;
-    }
+    font-weight: lighter;
+    font-size: x-small;
+    font-family: DM Sans;
+    color: #DBD8E3;
+    border-radius: 10px;
+    top: 10px;
+    left: 20px;
 }
 
 .button-edit {
     position: absolute;
-    top: -10px;
-    right: 30px;
+    top: 0px;
+    right: 30px; 
 }
 
 .button-delete {
     position: absolute;
-    top: -10px;
-    right: -10px;
-}
-
-.time {
-    position: absolute;
-    top: -10px;
-    right: 80px;
-    width: fit-content;
-    height: 30px;
-    background-color: #ffffff;
-    border: 1px solid #4dc900;
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-    padding: 0 10px 0 10px;
-
-    p {
-        padding: 0;
-        margin: 0;
-        padding-top: 4px;
-        color: #000000;
-    }
+    top: 0px;
+    right: 5px;
 }
 
 
 .done-duedate {
     position: absolute;
-    width: fit-content;
-    height: 30px;
-    background-color: #ffffff;
-    border: 1px solid #4dc900;
-    top: -10px;
-    left: 30px;
+    text-align: center;
     display: flex;
     justify-content: center;
-    border-radius: 5px;
-    padding: 0 10px 0 10px;
-
-    p {
-        padding: 0;
-        margin: 0;
-        padding-top: 4px;
-        color: #000000;
-    }
+    font-weight: lighter;
+    font-size: x-small;
+    font-family: DM Sans;
+    color: #DBD8E3;
+    border-radius: 10px;
+    top: 10px;
+    left: 20px;
 }
 
 .task-card {
@@ -160,24 +76,8 @@
 }
 
 .backlog {
-    border: 5px solid rgb(132, 0, 0);
-    background-color: #fff;
-
-    h2 {
-        color: rgb(42, 42, 42);
-    }
-
-    p.urgent-p {
-        color: rgb(42, 42, 42);
-    }
-
-    p {
-        color: rgb(42, 42, 42);
-    }
-
-    hr {
-        background-color: rgb(42, 42, 42);
-    }
+    border: 1px solid indianred;
+    background-color: #5C5470;
 }
 
 .task-card button {
@@ -185,32 +85,17 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #207209;
-    color: #ffffff;
+    background-color: transparent;
 }
 
-.task-card button:hover {
 
-    background-color: #ffffff;
-    border: 1px solid #207209;
-    color: #207209;
-    transform: scale(1.1);
-}
 
-.task-card button+button {
-    margin-left: 10px;
-}
-
-h2.expand {
-    margin-top: 10px;
-    padding-bottom: 10px;
-    font-size: 25px;
-}
-
-/* Make the task card responsive */
-@media (max-width: 600px) {
-    .task-card {
-        width: 200px;
-        margin: 10px 5px;
-    }
+p, b {
+    color: #DBD8E3;
+    font-family: DM Sans;
+    font-size: x-small;
+    font-weight: 500;
+    text-align: start;
+    margin-bottom: 2px;
+    text-align: end;
 }

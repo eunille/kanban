@@ -1,165 +1,203 @@
-.board-form {
-    width: 400px;
-    margin-right: 5px;
-}
+.dashboard {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #352f44;
+    width: auto;
+    height: 810px;
+  }
 
-.board-form-inner1,
-.board-form-inner2 {
-    height: 100%;
-    background-color: #042145;
-}
+/*Search Bar*/
+.search-bar {
+    top: 30px;
+    left: 350px;
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    width: 646px;
+    height: 35px;
+  }
+  .search-body {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    display: flex;
+    display: flex;
+  }
+  
+  .atxt {
+    top: 8px;
+    left: 15px;
+    position: absolute;
+    display: flex;
+    color: #dbd8e3;
+    font-size: 15px;
+    font-family: DM Sans;
+    letter-spacing: 0%;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: left;
+    width: 25px;
+    height: 15px;
+  }
+  
+  .urltxt {
+    top: 7px;
+    left: 276px;
+    position: absolute;
+    display: flex;
+    color: #dbd8e3;
+    font-size: 16px;
+    font-family: DM Sans;
+    letter-spacing: 0%;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: left;
+    text-wrap: nowrap;
+    width: 93px;
+    height: 21px;
+  }
+  
+  .reload-icon {
+    top: 7px;
+    left: 613px;
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .vector_12-53 {
+    top: 3px;
+    left: 2px;
+    position: absolute;
+    display: flex;
+  }
+
+  /*Log Out*/  
+  .logout {
+    top: 36px;
+    left: 1270px;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    width: 30px;
+    justify-content: center;
+    border: none;
+    border-radius: 3px;
+    background-color: #352f44;
+  }
+
+  /*Dashboard*/
+  .txt-dashboard {
+    top: 85px;
+    left: 70px;
+    position: absolute;
+    display: flex;
+    color: #ffffff;
+    font-size: 32px;
+    font-family: DM Sans;
+    letter-spacing: 0%;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: left;
+    text-wrap: nowrap;
+    width: 170px;
+    height: 42px;
+  }
 
 
 .modal-body,
 .modal-content,
-.board-form-inner2 {
+.board-form-inner2,
+.board-form-inner1 {
+    overflow: hidden;
     width: fit-content;
+    border-radius: 10px;
+    background-color: #352F44;
+    border: none;
+    top: 20px;
 }
 
-.modal-header {
-    cursor: move;
-}
-
-.modal-dialog {
-    height: auto;
-    width: 100%;
+.kanban-board { 
+    top: 155px;
+    left: 62px;
+    position: absolute;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    box-sizing: border-box;
+    width: 92%;
+    height: 600px;
 }
 
-.board-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    padding: 20px;
-}
-
-.kanban-board {
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 100%;
-    position: relative;
-}
-
-.example-list {
+.example-list { 
     width: 500px;
-    border: 1px solid #042145;
-    border-radius: 5px;
-    margin: 0 5px 0 5px;
+    border: 0.5px solid #352F44; 
+    background-color: rgba(92, 84, 112, 0.22); 
+    border-radius: 10px;
+    margin: 0 8px;
     display: inline-block;
     vertical-align: top;
     height: 100%;
     overflow-y: auto;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
     padding: 20px;
+    box-shadow: 2 1px 0px rgba(42, 36, 56, 0.3); 
 }
 
-.hang-button {
-    position: absolute;
+
+.add-icon {
     top: 10px;
+    left: 345px;
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    background-color: #2A2438;
+    border: none;
+    color: #DBD8E3;
+}
+
+.column-lenght {  /*taskcount*/
+    position: absolute;
+    background-color: #5C5470;
+    top: 7px;
     left: 10px;
-    z-index: 1;
-    background-color: #042145;
-    border: 1px solid #bedbff;
-    color: #bedbff;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.hang-button:hover {
-    background-color: #bedbff;
-    color: #042145;
-    transform: scale(1.1);
-}
-
-.hang-button-plus {
-    background-color: #042145;
-    border: 1px solid #bedbff;
-    color: #bedbff;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.hang-button-plus:hover {
-    background-color: #bedbff;
-    color: #042145;
-    transform: scale(1.1);
-}
-
-.hang-button1 {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1;
-    background-color: #042145;
-    border: 1px solid #bedbff;
-    color: #bedbff;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.hang-button1:hover {
-    background-color: #bedbff;
-    color: #042145;
-    transform: scale(1.1);
-}
-
-.column-lenght {
-    position: absolute;
-    background-color: #042145;
-    top: -10px;
-    left: -10px;
-    border-radius: 50%;
-    height: 35px;
-    width: 35px;
+    border-radius: 10px;
+    height: 30px;
+    width: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     h2 {
-        color: #fff;
-        padding: 0;
-        margin: 0;
-        font-size: 20px;
+        color: #DBD8E3;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: DM Sans;
     }
 }
 
-.h2-container {
+
+.h2-container { /*TODOINPROGRESSDONEBAR*/
     position: relative;
     display: flex;
+    background-color: #2A2438;
+    border-radius: 15px;
+    width: 380px;
+    height: 45px;
+    top: -15px;
+    left: -13px;
     align-items: center;
-
-    h2 {
-        padding: 0;
-        margin: 0;
-        flex-grow: 1;
-    }
-
-    button {
-        flex-basis: 50px;
-    }
+    justify-content: center; 
 }
 
-/* 
-i {
-    padding-right: 5px;
-} */
+.h2-container h2 {
+    padding: 2px;
+    margin: 10px;
+    color: #DBD8E3;
+    font-size: medium;
+    font-weight: 500;
+    text-align: center;
+    font-family: DM Sans;
+    letter-spacing: 0.1cap;
+}
