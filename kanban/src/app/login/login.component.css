@@ -136,4 +136,6 @@ button[type="submit"] {
     color: #DBD8E3;
     font-family: DM Sans;
     font-weight: 600;
+    position: relative;
+    text-align: center;
 }

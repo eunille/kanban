@@ -3,11 +3,12 @@
     background-color: #5C5470;
     border-radius: 15px;
     padding: 20px;
-    width: 360px;
+    width: 414px;
     height: auto;
     cursor: move;
     border: none;
     margin-bottom: 5px;
+    left: -10px;
 }
 
 .task-card h2.expand {

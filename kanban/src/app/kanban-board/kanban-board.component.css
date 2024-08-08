@@ -9,12 +9,12 @@
 
 /*Search Bar*/
 .search-bar {
-    top: 30px;
-    left: 350px;
+    top: 10px;
+    left: 410px;
     position: absolute;
     display: flex;
     box-sizing: border-box;
-    width: 646px;
+    width: 380px;
     height: 35px;
   }
   .search-body {
@@ -75,8 +75,8 @@
 
   /*Log Out*/  
   .logout {
-    top: 36px;
-    left: 1270px;
+    top: 16px;
+    left: 1385px;
     position: absolute;
     display: flex;
     overflow: hidden;
@@ -89,7 +89,7 @@
 
   /*Dashboard*/
   .txt-dashboard {
-    top: 85px;
+    top: 80px;
     left: 70px;
     position: absolute;
     display: flex;
@@ -119,12 +119,12 @@
 }
 
 .kanban-board { 
-    top: 155px;
+    top: 140px;
     left: 62px;
     position: absolute;
     display: flex;
     box-sizing: border-box;
-    width: 92%;
+    width: 1353px;
     height: 600px;
 }
 
@@ -137,8 +137,7 @@
     display: inline-block;
     vertical-align: top;
     height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow: hidden;
     padding: 20px;
     box-shadow: 2 1px 0px rgba(42, 36, 56, 0.3); 
 }
@@ -146,7 +145,7 @@
 
 .add-icon {
     top: 10px;
-    left: 345px;
+    left: 385px;
     position: absolute;
     display: flex;
     box-sizing: border-box;
@@ -178,18 +177,18 @@
 }
 
 
-.h2-container { /*TODOINPROGRESSDONEBAR*/
-    position: relative;
-    display: flex;
-    background-color: #2A2438;
-    border-radius: 15px;
-    width: 380px;
-    height: 45px;
-    top: -15px;
-    left: -13px;
-    align-items: center;
-    justify-content: center; 
-}
+  .h2-container { /*TODOINPROGRESSDONEBAR*/
+      position: relative;
+      display: flex;
+      background-color: #2A2438;
+      border-radius: 15px;
+      width: 423px;
+      height: 45px;
+      top: -15px;
+      left: -15px;
+      align-items: center;
+      justify-content: center; 
+  }
 
 .h2-container h2 {
     padding: 2px;
