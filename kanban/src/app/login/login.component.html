@@ -5,7 +5,7 @@
 
             <form class="sticky" [formGroup]="loginForm" (ngSubmit)="login()">
                 <div class="header">
-                    <h1 class="txt">Sign In</h1>
+                    <h1 class="txt">Log In</h1>
                 </div>
                 <div>
                     <label for="email">Email</label>
@@ -16,11 +16,10 @@
                     <input id="password" formControlName="password" type="password">
                 </div>
 
-                <button type="submit">Continue</button>
+                <button type="submit">Login</button>
 
                 <hr>
-                <p class="span">Don't have an account? </p>
-                <button class="submit1" (click)="goToRegister()">Register</button>
+                <button class="submit1" (click)="goToRegister()">Create Account</button>
             </form>
 
         </div>

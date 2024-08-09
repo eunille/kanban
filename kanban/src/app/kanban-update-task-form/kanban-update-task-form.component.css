@@ -11,7 +11,7 @@ label {
     margin-bottom: 2px;
     font-weight: medium;
     color: #DBD8E3;
-    font-family: DM Sans;
+    font-family: montserrat;
     font-size: small
 }
 
@@ -29,15 +29,15 @@ textarea {
     margin-bottom: 10px;
     padding: 10px;
     border: none;
-    border-radius: 5px;
-    font-family: DM Sans;
+    border-radius: 20px;
+    font-family: montserrat;
     color: #2A2438;
     background-color: #DBD8E3;
 }
 
 .nametask {
     color: #DBD8E3;
-    font-family: DM Sans;
+    font-family: montserrat;
     font-weight: 600;
     position: relative;
     left: 60px;
@@ -59,12 +59,12 @@ textarea {
 button[type="submit"] {
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
-    background-color: #2A2438;
+    background-color: #fff;
     border: none;
-    color: #DBD8E3;
-    font-family: DM Sans;
+    color: #333333;
+    font-family: montserrat;
     font-size: small;
     font-weight: 600;
     position: relative;

@@ -11,13 +11,13 @@ label {
     margin-bottom: 2px;
     font-weight: medium;
     color: #DBD8E3;
-    font-family: DM Sans;
+    font-family: montserrat;
     font-size: small;
 }
 
 .nametask {
     color: #DBD8E3;
-    font-family: DM Sans;
+    font-family: montserrat;
     font-weight: 600;
     position: relative;
     left: 70px;
@@ -29,6 +29,7 @@ input:focus,
 input:not(:placeholder-shown) {
  color: #2A2438;
  outline: none;
+ font-family: montserrat; 
 }
 
 input,
@@ -38,8 +39,8 @@ textarea {
     margin-bottom: 10px;
     padding: 10px;
     border: none;
-    border-radius: 5px;
-    font-family: DM Sans;
+    border-radius: 20px;
+    font-family: montserrat;
     color: #2A2438;
     background-color: #DBD8E3;
 }
@@ -64,14 +65,14 @@ textarea:not(:placeholder-shown) {
 button[type="submit"] {
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
-    background-color: #2A2438;
+    background-color: #FFFFFF;
     border: none;
-    color: #DBD8E3;
-    font-family: DM Sans;
+    color: #333333;
+    font-family: montserrat;
     font-size: small;
-    font-weight: 500;
+    font-weight: 600;
     position: relative;
     left: 110px;
     margin-top: 15px;
@@ -81,7 +82,7 @@ button[type="submit"] {
 
 .error {
     color: indianred;
-    font-family: DM Sans;
+    font-family: montserrat;
     font-size: 10px;
     position: relative;
     top: -10px;

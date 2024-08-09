@@ -1,6 +1,5 @@
 <form class="sticky" [formGroup]="taskForm" (ngSubmit)="saveTask()">
     <div class="header">
-        <h2 class="nametask">Create Task</h2>
     </div>
     <div>
         <label for="taskName">Task Name</label>
@@ -24,9 +23,5 @@
             <small class="error">Due date is required</small>
         </div>
     </div>
-    <div>
-        <label for="assignee">Assignee</label>
-        <input id="assignee" formControlName="assignee">
-    </div>
-    <button type="submit" class="btn btn-primary">Add</button>
+    <button type="submit" class="btn btn-primary">Create</button>
 </form>

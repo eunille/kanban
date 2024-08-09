@@ -1,3 +1,4 @@
+
 /* You can add global styles to this file, and also import other style files */
 * {
     /* border: 1px solid red; */
@@ -36,7 +37,7 @@ body,
 }
 
 span {
-    font-family: DM Sans;
+    font-family: montserrat;
     font-size: small;
     font-weight: 500;
     text-align: start;
