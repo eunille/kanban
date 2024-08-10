@@ -39,9 +39,9 @@ textarea {
     margin-bottom: 10px;
     padding: 10px;
     border: none;
-    border-radius: 20px;
+    border-radius: 0px;
     font-family: montserrat;
-    color: #2A2438;
+    color: #333333;
     background-color: #DBD8E3;
 }
 
@@ -81,7 +81,7 @@ button[type="submit"] {
 }
 
 .error {
-    color: indianred;
+    color: #333333;
     font-family: montserrat;
     font-size: 10px;
     position: relative;

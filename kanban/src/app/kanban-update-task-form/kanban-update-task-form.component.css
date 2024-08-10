@@ -29,9 +29,9 @@ textarea {
     margin-bottom: 10px;
     padding: 10px;
     border: none;
-    border-radius: 20px;
+    border-radius: 0px;
     font-family: montserrat;
-    color: #2A2438;
+    color: #333333;
     background-color: #DBD8E3;
 }
 
