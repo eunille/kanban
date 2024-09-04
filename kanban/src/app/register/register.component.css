@@ -1,21 +1,60 @@
-/* Add some basic styling to the form */
-form {
+/* Global Styles */
+
+body {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .body {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #F7F7F7;
+    width: auto;
+    height: 100vh; /* Changed to 100vh to make it full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .board-form-inner2 {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form {
     width: 370px;
     padding-bottom: 100px;
-}
-
-/* Style the labels and inputs */
-label {
+  }
+  
+  label {
     display: block;
     margin-bottom: 5px;
     font-weight: 500;
     color: #393E46;
     font-family: Montserrat;
     letter-spacing: 0;
-}
-
-input,
-textarea {
+  }
+  
+  hr {
+    color: #352F44;
+    margin: 30px;
+  }
+  
+  input,
+  textarea {
     width: 100%;
     height: 40px;
     margin-bottom: 20px;
@@ -29,26 +68,30 @@ textarea {
     letter-spacing: 0;
     line-height: normal;
     text-indent: 2px;
-    font-weight: 500;
-}
-
-input:focus,
-input:not(:placeholder-shown) {
- outline: none;
-}
-
-input[type="date"] {
+    font-weight: 400;
+  }
+  
+  input:focus,
+  input:not(:placeholder-shown) {
+    outline: none;
+  }
+  
+  input#password {
+    margin-bottom: 10px;
+  }
+  
+  input[type="date"] {
     padding: 10px 10px 10px 20px;
     /* add some extra padding for the date picker icon */
-}
-
-textarea {
+  }
+  
+  textarea {
     height: 100px;
     resize: vertical;
-}
-
-/* Style the submit button */
-button[type="submit"] {
+  }
+  
+  /* Style the submit button */
+  button[type="submit"] {
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
@@ -59,14 +102,17 @@ button[type="submit"] {
     margin-top: 20px;
     font-family: Montserrat;
     font-weight: 500;
-}
-
-hr {
-    color: #352F44;
-    margin: 30px;
-}
-
-.submit1 {
+  }
+  
+  .span {
+    color: #DBD8E3;
+    font-family: Montserrat;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: -10px;
+  }
+  
+  .submit1 {
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
@@ -77,62 +123,40 @@ hr {
     font-family: Montserrat;
     font-weight: 600;
     margin-top: 10px;
-}
-
-
-.board-form {
-    width: 400px;
-    margin-right: 5px;
-}
-
-.span {
-    color: #DBD8E3;
-    font-family: Montserrat;
-    letter-spacing: 0;
-    text-align: center;
-    margin-top: -10px;
-}
-
-.board-form-inner1,
-.board-form-inner2 {
-    height: 100%;
-    background-color: none;
-}
-
-
-.board-form-inner2 {
-    display: flex;
-    align-content: center;
-    align-items: center;
-}
-
-
-input#password {
-    margin-bottom: 10px;
-}
-
-.form-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.body {
-    position: relative;
-    box-sizing: border-box;
-    overflow: hidden;
-    background: #F7F7F7;
-    width: auto;
-    height: 810px;
-}
-
-.txt {
+  }
+  
+  .sticky button+button {
+    margin-left: 10px;
+  }
+  
+  .txt {
     color: #393E46;
     font-family: Montserrat;
     font-weight: 600;
     position: relative;
     text-align: center;
-}
+  }
+  
+  /* Media Queries */
+  
+  @media only screen and (max-width: 768px) {
+    form {
+      width: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    form {
+      width: 90%;
+    }
+    input,
+    textarea {
+      height: 30px;
+    }
+    button[type="submit"] {
+      padding: 5px 10px;
+    }
+    .submit1 {
+      padding: 5px 10px;
+    }
+  }

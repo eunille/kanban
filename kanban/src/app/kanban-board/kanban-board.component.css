@@ -1,117 +1,142 @@
 .dashboard {
     position: relative;
     box-sizing: border-box;
-    overflow: hidden;
-    background: #F7F7F7;
     width: auto;
-    height: 810px;
   }
 
-  /*Log Out*/  
   .logout {
-    top: 20px;
-    left: 1288px;
     position: absolute;
+    top: 20px;
+    right: 20px; /* changed from left: 1288px to right: 20px */
     display: flex;
-    overflow: hidden;
-    width: 120px;
     justify-content: center;
+    padding: 8px 16px; /* added padding */
     border: none;
-    background-color: #F443366B;
+    font-size: small;
+    background-color: #282828; /* changed to a darker gray color */
     font-family: montserrat;
     font-weight: 600;
     border-radius: 10px;
-    color: indianred;
+    color: #fff; /* changed to white */
+    cursor: pointer; /* added cursor pointer */
+  }
+  
+  .logout:hover {
+    background-color: #FF7777; /* added hover effect */
   }
 
-
-
-.modal-body,
-.modal-content,
-.board-form-inner2,
-.board-form-inner1 {
-    overflow: hidden;
-    width: fit-content;
-    border-radius: 10px;
-    border-radius: 0px;
-    background-color: #718355;
-    border: none;
-    top: 20px;
-}
-
-.kanban-board { 
-    top: 140px;
-    left: 62px;
-    position: absolute;
+.kanban-board {
     display: flex;
-    box-sizing: border-box;
-    width: 1353px;
-    height: 600px;
-}
-
-.example-list { 
-    width: 100%;
-    background-color: #333333; 
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 100px;
+    height: 90vh;
+    width: 600px;
+  }
+  
+  .example-list {
+    width: calc(33.33% - 16px);
+    margin: 8px;
+    background-color: #404258;
     border-radius: 25px;
-    margin: 0 8px;
-    display: inline-block;
-    vertical-align: top;
-    height: 115%;
-    overflow: hidden;
     padding: 40px;
-    top: -70px;
-    position: relative;
-}
-
-
-.add-icon {
-    color: #333333;
+  }
+  
+  /* Media queries */
+  
+  /* Large screens */
+  @media (min-width: 1200px) {
+    .kanban-board {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Medium screens */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .kanban-board {
+      width: 992px;
+      margin: 0 auto;
+    }
+    .example-list {
+      width: calc(50% - 16px);
+    }
+  }
+  
+  /* Small screens */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .kanban-board {
+      width: 768px;
+      margin: 0 auto;
+    }
+    .example-list {
+      width: 100%;
+      margin: 8px 0;
+    }
+  }
+  
+  /* Extra small screens */
+  @media (max-width: 767px) {
+    .kanban-board {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .example-list {
+      width: 100%;
+      margin: 8px 0;
+    }
+  }
+  
+  .add-icon {
+    position: absolute; /* changed to absolute */
+    padding: 8px 16px; /* kept padding */
     border: none;
-    background-color: #706C61;
-    border-radius: 20px;
-    position: relative;
-    display: flex;
-}
+    font-size: small;
+    background-color: #6D9886; /* kept the green color */
+    font-family: montserrat; /* kept font family */
+    font-weight: 600; /* kept font weight */
+    border-radius: 10px; /* kept border radius */
+    color: #3B5249; /* kept white text color */
+    cursor: pointer; /* kept cursor pointer */
+    top: 60px; /* changed to 50% to center vertically */
+    left: 50%; /* added to center horizontally */
+    transform: translate(-50%, -50%); /* added to center the button */
+    margin: 0 auto; /* added to make it responsive */
+    max-width: 130px; /* added to set a maximum width */
+  }
+    
+  .add-icon:hover {
+    background-color: #9DC6A7; /* kept hover effect */
+  }
 
-.column-lenght {  /*taskcount*/
-    position: absolute;
-    background-color: #E1F4F3;
-    top: 7px;
-    left: -10px;
+.column-lenght {
+    margin-left: -24px;
+    background-color: #EEEEEE;
+    margin-top: -42px;
     border-radius: 30px;
     height: 30px;
     width: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    h2 {
-        color: #333333;
-        font-weight: 600;
-        font-size: 16px;
-        font-family: Montserrat;
-    }
-}
-
-
-  .h2-container { /*TODOINPROGRESSDONEBAR*/
-      position: relative;
-      display: flex;
-      border-radius: 15px;
-      width: 423px;
-      height: 45px;
-      top: -35px;
-      left: -15px;
-      align-items: center;
-      justify-content: center; 
+    color: #50577A;
   }
 
- h2 {
-    padding: 2px;
-    margin: 10px;
-    color: #FFFFFF;
-    font-size: large;
-    font-weight: 600;
-    text-align: center;
-    font-family: montserrat;
+
+.h2-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -35px;
+  color: #F7F7F7;
+}
+
+h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: montserrat;
+  flex: 1;
 }

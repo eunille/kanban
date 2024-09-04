@@ -1,91 +1,46 @@
-/* Add some basic styling to the form */
-form {
-    width: 400px;
-    padding: 20px;
-    height: 100%;
-}
-
-/* Style the labels and inputs */
-
-/* Style the submit button */
-button[type="submit"] {
-
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #042145;
-    border: 1px solid #bedbff;
-    color: #bedbff;
-}
-
-
 .modal-title {
-    font-family: montserrat;
+    font-size: large;
+    font-weight: 600;
+    color: #404258;
+    font-family: Montserrat;
 }
 
 .modal-body {
-    font-family: montserrat;
     font-size: small;
-}
-
-.submit1 {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #333333;
-    border: 1px solid #e5534b;
-    font-family: montserrat;
-    font-size: small;
-    color: #dbd8e3;
-}
-
-
-.sticky button+button {
-    margin-left: 10px;
-}
-
-
-.modal-body,
-.board-form-inner2 {
-    width: fit-content;
-}
-
-.modal-content {
-    background-color:#eeee;
-    color: #333333;
-    position: absolute;
-    top: 250px;
-    border-radius: 15px;
-    border: none;
+    font-weight: 500;
+    font-family: Montserrat;
+    color: #101011;
 }
 
 .close {
-    background-color: #333333;
-    border-radius: 40px;
+    border-radius: 10px;
     height: 20px;
-    margin-top: 5px;
+    top: 20px;
+    color: #171515;
+    font-size: large;
 }
 
-
-.modal-header {
-    cursor: move;
-    
+.modal-footer {
+    border-top: 1px solid #D8DEE4;
+    background-color: #FFFFFF;
 }
 
-.modal-dialog {
-    height: auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.submit1 {
+    color: #fefefe;
+    background-color: #02020b;
+    border: transparent;
+    border-radius: 10px;
+    padding: 5px;
+    width: 80px;
+    font-size: smaller;
+    font-weight: 600;
+    font-family: Montserrat;
 }
 
-
-/* Make the form responsive */
+/* Make the modal responsive */
 @media (max-width: 600px) {
-    form {
+    .modal-content {
         margin: 20px;
+        padding: 16px;
     }
 }

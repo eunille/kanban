@@ -2,7 +2,7 @@
     <h2 class="expand" (click)="toggleDetails()" (click)="toggleMaximize()">{{ task?.taskName }}</h2>
 
     <div class="hide-first" *ngIf="isMaximized">
-        <span class="justify">{{ task?.description }}</span>
+        <p class="justify">{{ task?.description }}</p>
         <p><b>Start Date:</b> {{ task?.createdDate | date: 'MMMM d, y' }}</p>
         <p><b>Duration:</b> {{ duration }}</p>
 

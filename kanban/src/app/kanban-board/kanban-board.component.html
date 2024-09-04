@@ -6,7 +6,10 @@
         </a>
     </button>
 
-    
+    <button class="add-icon" (click)="openCreateTaskModal()">
+        Create
+    </button>
+
     <div class="right">
         <div class="kanban-board" cdkDropListGroup>
             <div *ngFor="let column of columns" cdkDropList [cdkDropListData]="getTasksByStatus(column.status)"
@@ -18,12 +21,6 @@
                             <h2>{{ getTasksByStatus(column.status).length }}</h2>
                         </div>
                     </h2>
-                    <button class="add-icon" (click)="openCreateTaskModal()">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 12H19M12 5V19" stroke="#DBD8E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                          </svg>
-                        <!-- {{ showForm? 'Minimize' : 'Add Task' }} -->
-                    </button>
                 </div>
 
                 <div class="column-task">

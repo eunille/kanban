@@ -1,12 +1,7 @@
 <form class="sticky" [formGroup]="taskForm" (ngSubmit)="saveTask()">
-    <div class="header">
-    </div>
     <div>
         <label for="taskName">Task Name</label>
         <input id="taskName" formControlName="taskName">
-        <div *ngIf="taskForm?.get('taskName')?.hasError('required') && taskForm?.get('taskName')?.touched">
-            <small class="error">Task name is required</small>
-        </div>
     </div>
     <div>
         <label for="description">Description</label>
