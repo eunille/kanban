@@ -30,6 +30,7 @@ span {
 
 .cdk-drag-preview {
     overflow: hidden;
+    display: none;
 }
 
 html, body { height: 100%; }
